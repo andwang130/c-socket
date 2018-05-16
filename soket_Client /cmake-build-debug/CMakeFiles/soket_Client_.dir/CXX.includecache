@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/meidai/下载/c-socket/soket_Client /Client.cpp
+Client.h
+/home/meidai/下载/c-socket/soket_Client /Client.h
+arpa/inet.h
+-
+string.h
+-
+
+/home/meidai/下载/c-socket/soket_Client /Client.h
+sys/socket.h
+-
+netinet/in.h
+-
+iostream
+-
+
+/home/meidai/下载/c-socket/soket_Client /main.cpp
+iostream
+-
+Client.h
+/home/meidai/下载/c-socket/soket_Client /Client.h
+

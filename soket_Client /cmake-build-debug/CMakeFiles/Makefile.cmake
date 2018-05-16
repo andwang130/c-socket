@@ -20,16 +20,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/meidai/下载/clion-2018.1/bin/cmake/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake"
   "/home/meidai/下载/clion-2018.1/bin/cmake/share/cmake-3.10/Modules/CMakeSystemSpecificInformation.cmake"
   "/home/meidai/下载/clion-2018.1/bin/cmake/share/cmake-3.10/Modules/CMakeSystemSpecificInitialize.cmake"
-  "/home/meidai/下载/clion-2018.1/bin/cmake/share/cmake-3.10/Modules/CheckIncludeFile.cmake"
-  "/home/meidai/下载/clion-2018.1/bin/cmake/share/cmake-3.10/Modules/CheckLibraryExists.cmake"
-  "/home/meidai/下载/clion-2018.1/bin/cmake/share/cmake-3.10/Modules/CheckSymbolExists.cmake"
   "/home/meidai/下载/clion-2018.1/bin/cmake/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/home/meidai/下载/clion-2018.1/bin/cmake/share/cmake-3.10/Modules/Compiler/GNU-C.cmake"
   "/home/meidai/下载/clion-2018.1/bin/cmake/share/cmake-3.10/Modules/Compiler/GNU-CXX.cmake"
   "/home/meidai/下载/clion-2018.1/bin/cmake/share/cmake-3.10/Modules/Compiler/GNU.cmake"
-  "/home/meidai/下载/clion-2018.1/bin/cmake/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake"
-  "/home/meidai/下载/clion-2018.1/bin/cmake/share/cmake-3.10/Modules/FindPackageMessage.cmake"
-  "/home/meidai/下载/clion-2018.1/bin/cmake/share/cmake-3.10/Modules/FindThreads.cmake"
   "/home/meidai/下载/clion-2018.1/bin/cmake/share/cmake-3.10/Modules/Platform/Linux-GNU-C.cmake"
   "/home/meidai/下载/clion-2018.1/bin/cmake/share/cmake-3.10/Modules/Platform/Linux-GNU-CXX.cmake"
   "/home/meidai/下载/clion-2018.1/bin/cmake/share/cmake-3.10/Modules/Platform/Linux-GNU.cmake"
@@ -51,5 +45,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/my_socket.dir/DependInfo.cmake"
+  "CMakeFiles/soket_Client_.dir/DependInfo.cmake"
   )

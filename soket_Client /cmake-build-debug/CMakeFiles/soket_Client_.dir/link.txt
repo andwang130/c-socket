@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/soket_Client_.dir/main.cpp.o CMakeFiles/soket_Client_.dir/Client.cpp.o  -o soket_Client_ 
