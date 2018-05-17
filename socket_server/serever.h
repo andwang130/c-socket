@@ -21,8 +21,14 @@ private:
     struct sockaddr_in server_in;//绑定地址结构体
     int serevr_skcoket;
     struct  sockaddr_in client_in;
+    void socket_init();
+    void socket_bin();
+    void socket_listen(int num);//设置最大连接数
+    void socket_acceap(void(*Callback)(int *clicen));//开启监听
+
 public:
-    char * run(ip_info &info);
+    void run();
+    Cserever(char *ip,int port);
 
 };
 
