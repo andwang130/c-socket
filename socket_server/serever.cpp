@@ -6,19 +6,30 @@
 #include <arpa/inet.h>
 #include <thread>
 #include <string.h>
+#include <fstream>
 using namespace std;
-
 void sereve_recv(int *sockt)
 {
     cout<<*sockt<<endl;
+    fstream f;
+    f.open("text",ios::out);
 
     char req[1024];
     while (true) {
-
+        memset(&req,0,1024);
         int ret=recv(*sockt,req,1024,0);
-        std::cout<<req<<std::endl;
+        f<<req;
+        //std::cout<<ret<<endl;
+        std::cout<<strlen(req)<<std::endl;
+        f.close();
+        char re[]="ok";
+        send(*sockt,re,strlen(re),0);
         if(ret<=0)
+
+
+
         {
+
             break;
         }
     }

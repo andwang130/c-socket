@@ -23,6 +23,8 @@ thread
 -
 string.h
 -
+fstream
+-
 
 /home/meidai/下载/c-socket/socket_server/serever.h
 sys/socket.h

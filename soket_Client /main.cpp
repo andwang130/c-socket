@@ -9,9 +9,10 @@ int main() {
     char *meg="sdsdsdsdsds";
     CClient client(ip,port);
     client.client_init();
-    for(int i=0;i<5;i++)
+    for(int i=0;i<23;i++)
     {
         client.client_send(meg);
     }
+    cout<<client.client_recv()<<endl;
     return 0;
 }

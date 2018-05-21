@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/sokcet_epoll.dir/main.cpp.o CMakeFiles/sokcet_epoll.dir/epoll_server.cpp.o  -o sokcet_epoll 

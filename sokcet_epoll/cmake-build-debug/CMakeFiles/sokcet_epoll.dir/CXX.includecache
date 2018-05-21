@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/meidai/下载/c-socket/sokcet_epoll/epoll_sereve.h
+iostream
+-
+sys/socket.h
+-
+sys/epoll.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+
+/home/meidai/下载/c-socket/sokcet_epoll/epoll_server.cpp
+epoll_sereve.h
+/home/meidai/下载/c-socket/sokcet_epoll/epoll_sereve.h
+string.h
+-
+
+/home/meidai/下载/c-socket/sokcet_epoll/main.cpp
+iostream
+-
+epoll_sereve.h
+/home/meidai/下载/c-socket/sokcet_epoll/epoll_sereve.h
+
