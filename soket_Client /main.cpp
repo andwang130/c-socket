@@ -4,8 +4,8 @@
 using namespace std;
 
 int main() {
-    char *ip="106.14.158.92";
-    int port=8080;
+    char *ip="127.0.0.1";
+    int port=8888;
     cout<<ip<<endl;
     char meg[1024];
     memset(meg,0,1024);
