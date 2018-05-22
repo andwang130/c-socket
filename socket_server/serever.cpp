@@ -10,29 +10,21 @@
 using namespace std;
 void sereve_recv(int *sockt)
 {
-    cout<<*sockt<<endl;
+    //cout<<*sockt<<endl;
     fstream f;
     f.open("text",ios::out);
-
     char req[1024];
-    while (true) {
-        memset(&req,0,1024);
-        int ret=recv(*sockt,req,1024,0);
-        f<<req;
-        //std::cout<<ret<<endl;
-        std::cout<<strlen(req)<<std::endl;
-        f.close();
-        char re[]="ok";
-        send(*sockt,re,strlen(re),0);
-        if(ret<=0)
+    memset(req,0,sizeof(req));
+    int ret=recv(*sockt,req,1024,0);
+    cout<<req<<endl;
+    f<<req;
+    f.close();
+    char *re="ok";
+    send(*sockt,re,strlen(re),0);
 
 
 
-        {
 
-            break;
-        }
-    }
 }
 void Cserever::run() {
     //scoket整个流程
@@ -67,9 +59,10 @@ void Cserever::socket_acceap(void(*Callback)(int *clicen))//需要传入一个�
     //监听函数，返回和客户端建立链接的cocket,需要传入一个服务器的socket,还有一个地址结构体，来结束客户端的地址结构，第3
     //个参数是结构体的长度，必须的soklen_t类型的
     socklen_t lent= sizeof(client_in);
-    int coon=accept(serevr_skcoket,(struct sockaddr*) &client_in,&lent);
-    while (true) {
+    while (true)
+    {
         int coon = accept(serevr_skcoket, (struct sockaddr *) &client_in, &lent);//开始监听，返回连接的socket,链接方的信息保存在client_in当中
+        cout<<coon<<"已经连接"<<endl;
         std::cout << strerror(errno) << std::endl; //打印一下错误信息
         thread t(Callback,&coon);
         t.detach();

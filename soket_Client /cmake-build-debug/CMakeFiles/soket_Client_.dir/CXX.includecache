@@ -27,4 +27,6 @@ iostream
 -
 Client.h
 /home/meidai/下载/c-socket/soket_Client /Client.h
+string.h
+-
 

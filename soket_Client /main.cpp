@@ -1,18 +1,20 @@
 #include <iostream>
 #include "Client.h"
+#include <string.h>
 using namespace std;
 
 int main() {
-    char *ip="127.0.0.1";
-    int port=8000;
+    char *ip="106.14.158.92";
+    int port=8080;
     cout<<ip<<endl;
-    char *meg="sdsdsdsdsds";
+    char meg[1024];
+    memset(meg,0,1024);
+    cin>>meg;
+    cout<<meg<<endl;
     CClient client(ip,port);
     client.client_init();
-    for(int i=0;i<23;i++)
-    {
-        client.client_send(meg);
-    }
-    cout<<client.client_recv()<<endl;
+    client.client_send(meg);
+    client.client_recv();
+    cin>>meg;
     return 0;
 }
